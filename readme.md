@@ -22,7 +22,7 @@ npm i vue-source-loader
 
 ```js
 const options = {
-    mode：'es6',                       // 输出的 javascript 模块加载方式。目前只支持倒入 es6 模式，即：import
+    mode: 'es6',                       // 输出的 javascript 模块加载方式。可选值：commonjs 或者 es6
     templateSign: '__inline_template', // 模板标记，默认值 `__inline_template`
     scriptSign: '__inline_script',     // javascript 标记，默认值 `__inline_script`
     highlightStyle: 'default'          // 代码高亮显示样式，默认值 `default`
@@ -83,3 +83,13 @@ module.exports = {
     // ...
 </script>
 ```
+
+## todolist
+
+## update
+
+### 0.0.2
+
+* 增加对导入文件的依赖监听
+* 配置 `mode` 增加可选值 `commonjs`
+
