@@ -12,21 +12,14 @@ then
   echo "Releasing $VERSION ..."
   export SAUCE_BUILD_ID=$VERSION:`date +"%s"`
 
-  # build
   VERSION=$VERSION
 
-  # commit
   npm version $VERSION --message "[release] $VERSION"
   echo
   echo
   echo
 
   # publish
-  echo "git push ..."
-  git push
-  echo
-  echo
-  echo
   echo "npm publish ..."
   npm publish
   echo
