@@ -5,23 +5,44 @@
 1 verbose cli   'publish' ]
 2 info using npm@3.10.3
 3 info using node@v6.3.0
-4 verbose stack Error: missing script: publish
-4 verbose stack     at run (C:\Program Files\nodejs\node_modules\npm\lib\run-script.js:151:19)
-4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\run-script.js:61:5
-4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:356:5
-4 verbose stack     at checkBinReferences_ (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:320:45)
-4 verbose stack     at final (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:354:3)
-4 verbose stack     at then (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:124:5)
-4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:311:12
-4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
-4 verbose stack     at tryToString (fs.js:455:3)
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
-5 verbose cwd E:\github\vue-source-loader
-6 error Windows_NT 6.1.7601
-7 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "publish"
-8 error node v6.3.0
-9 error npm  v3.10.3
-10 error missing script: publish
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 verbose run-script [ 'prepublish', 'publish', 'postpublish' ]
+5 info lifecycle vue-source-loader@0.0.1~prepublish: vue-source-loader@0.0.1
+6 silly lifecycle vue-source-loader@0.0.1~prepublish: no script for prepublish, continuing
+7 info lifecycle vue-source-loader@0.0.1~publish: vue-source-loader@0.0.1
+8 verbose lifecycle vue-source-loader@0.0.1~publish: unsafe-perm in lifecycle true
+9 verbose lifecycle vue-source-loader@0.0.1~publish: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;E:\github\vue-source-loader\node_modules\.bin;C:\Program Files\nodejs;C:\Users\Administrator\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\local\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\bin;C:\Users\Administrator\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Java\jdk1.7.0_60\bin;C:\Program Files\Java\jdk1.7.0_60\jre\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files\nodejs;D:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm;D:\Program Files\Microsoft VS Code\bin;D:\Program Files\Git\usr\bin\vendor_perl;D:\Program Files\Git\usr\bin\core_perl
+10 verbose lifecycle vue-source-loader@0.0.1~publish: CWD: E:\github\vue-source-loader
+11 silly lifecycle vue-source-loader@0.0.1~publish: Args: [ '/d /s /c', 'bash publish.sh' ]
+12 silly lifecycle vue-source-loader@0.0.1~publish: Returned: code: 1  signal: null
+13 info lifecycle vue-source-loader@0.0.1~publish: Failed to exec publish script
+14 verbose stack Error: vue-source-loader@0.0.1 publish: `bash publish.sh`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:242:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:852:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+15 verbose pkgid vue-source-loader@0.0.1
+16 verbose cwd E:\github\vue-source-loader
+17 error Windows_NT 6.1.7601
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "publish"
+19 error node v6.3.0
+20 error npm  v3.10.3
+21 error code ELIFECYCLE
+22 error vue-source-loader@0.0.1 publish: `bash publish.sh`
+22 error Exit status 1
+23 error Failed at the vue-source-loader@0.0.1 publish script 'bash publish.sh'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the vue-source-loader package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     bash publish.sh
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs vue-source-loader
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls vue-source-loader
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

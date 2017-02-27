@@ -13,7 +13,7 @@ then
   export SAUCE_BUILD_ID=$VERSION:`date +"%s"`
 
   # build
-  VERSION=$VERSION npm run build
+  VERSION=$VERSION
 
   # commit
   git add -A
