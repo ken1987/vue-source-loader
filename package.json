@@ -1,0 +1,27 @@
+{
+  "author": {
+    "name": "ken1987",
+    "email": "ken198701@gmail.com"
+  },
+  "dependencies": {
+    "highlight.js": "^9.4.0"
+  },
+  "description": "Replace sign with the designated resource.",
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  },
+  "keywords": [
+    "webpack",
+    "source",
+    "vue",
+    "loader"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "vue-source-loader",
+  "peerDependencies": {
+    "webpack": ">=2.0.0"
+  },
+  "version": "0.0.1"
+}
