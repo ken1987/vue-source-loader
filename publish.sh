@@ -16,8 +16,6 @@ then
   VERSION=$VERSION
 
   # commit
-  git add -A
-  git commit -m "[build] $VERSION $MESSAGE"
   npm version $VERSION --message "[release] $VERSION"
   echo
   echo
