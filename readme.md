@@ -1,6 +1,6 @@
 #  vue-source-loader
 
-Replace sign with the designated resource.
+Replace sign with the designated resource in `.vue` file.
 
 ## bug
 
@@ -42,7 +42,7 @@ module.exports = {
 }
 ```
 
-## usage
+## usage in `.vue` file
 
 * 在 `template` 标签中插入模块地址
 

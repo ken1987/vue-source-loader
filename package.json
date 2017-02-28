@@ -6,7 +6,7 @@
   "dependencies": {
     "highlight.js": "^9.4.0"
   },
-  "description": "Replace sign with the designated resource.",
+  "description": "Replace sign with the designated resource in .vue file.",
   "engines": {
     "node": ">=6.0.0",
     "npm": ">=3.0.0"
