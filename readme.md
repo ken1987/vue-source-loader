@@ -1,6 +1,6 @@
 #  vue-source-loader
 
-The src resource inline.
+The resource of `.vue` inline.
 
 ## bug
 
@@ -48,41 +48,44 @@ module.exports = {
 
     > 规则：`templateSign + '(' + filePath + ')'`
 
-```html
-<template>
-    <div>
-        __inline_template(path/to/demo.vue)
-    </div>
-</template>
-```
+    ```html
+    <template>
+        <div>
+            __inline_template(path/to/demo.vue)
+        </div>
+    </template>
+    ```
 
 * 在 `script` 标签中插入对导入的模块的引用
 
     > 规则：`'global.' + templateSign`
     > 说明：`global.` 前缀是为了在没有插件的时候代码能正常执行
 
-```html
-<script>
-    const components = global.__inline_script
-</script>
-```
+    ```html
+    <script>
+        const components = global.__inline_script
+    </script>
+    ```
 
 * 输入结果
 
-```html
-<template>
-    <div>
-        <components_tag></components_tag>
-        <pre><code class="hljs default">...</code></pre>
-    </div>
-</template>
-<script>
-    import 'highlight.js/styles/default.css';
-    import components_tag from 'path/to/demo.vue';
-    const components = {components_tag}
-    // ...
-</script>
-```
+    ```html
+    <template>
+        <div>
+            <components_tag></components_tag>
+            <pre><code class="hljs default">...</code></pre>
+        </div>
+    </template>
+    <script>
+        import 'highlight.js/styles/default.css';
+        import components_tag from 'path/to/demo.vue';
+        const components = {components_tag}
+        // ...
+    </script>
+    ```
+    > `components_tag` 基本不用但是会和其它自定义标签冲突。
+    > 规则：`'vsl_' + (+new Date()) + '_' + addNum++`
+    > `addNum` 每次调用的时候都从 1 开始自增加
 
 ## todolist
 
@@ -92,4 +95,8 @@ module.exports = {
 
 * 增加对导入文件的依赖监听
 * 配置 `mode` 增加可选值 `commonjs`
+
+### 0.0.3
+
+* fix publish.sh
 
