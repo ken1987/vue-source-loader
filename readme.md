@@ -59,6 +59,7 @@ module.exports = {
 * 在 `script` 标签中插入对导入的模块的引用
 
     > 规则：`'global.' + templateSign`
+    >
     > 说明：`global.` 前缀是为了在没有插件的时候代码能正常执行
 
     ```html
