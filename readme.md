@@ -1,6 +1,6 @@
 #  vue-source-loader
 
-The resource of `.vue` inline.
+Replace sign with the designated resource.
 
 ## bug
 
