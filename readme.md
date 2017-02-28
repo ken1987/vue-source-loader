@@ -84,7 +84,9 @@ module.exports = {
     </script>
     ```
     > `components_tag` 基本不用担心会和其它自定义标签命名冲突。
+    >
     > 规则：`'vsl_' + (+new Date()) + '_' + addNum++`
+    >
     > `addNum` 每次调用的时候都从 1 开始自增加
 
 ## todolist
